@@ -7,10 +7,12 @@
     "start": "node server.js",
     "dev": "node ace serve --watch",
     "lint": "eslint . --ext=.ts",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "ace": "node ace"
   },
   "devDependencies": {
     "@adonisjs/assembler": "^5.0.0",
+    "@types/node": "^15.0.3",
     "adonis-preset-ts": "^2.1.0",
     "eslint": "^7.26.0",
     "eslint-config-prettier": "^8.3.0",
@@ -26,6 +28,7 @@
     "@adonisjs/core": "^5.1.0",
     "@adonisjs/lucid": "^14.0.2",
     "@adonisjs/repl": "^3.0.0",
+    "fast-csv": "^4.3.6",
     "luxon": "^1.26.0",
     "mysql": "^2.18.1",
     "proxy-addr": "^2.0.6",

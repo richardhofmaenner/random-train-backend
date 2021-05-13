@@ -1,5 +1,25 @@
 {
   "commands": {
+    "station:import": {
+      "settings": {
+        "loadApp": true,
+        "stayAlive": true
+      },
+      "commandPath": "./commands/StationImport",
+      "commandName": "station:import",
+      "description": "Import all stations from a csv file",
+      "args": [
+        {
+          "type": "string",
+          "propertyName": "file",
+          "name": "file",
+          "required": true,
+          "description": "Path to the CSV file"
+        }
+      ],
+      "aliases": [],
+      "flags": []
+    },
     "dump:rcfile": {
       "settings": {},
       "commandPath": "@adonisjs/core/build/commands/DumpRc",
