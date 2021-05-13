@@ -20,6 +20,8 @@
 
 import Route from '@ioc:Adonis/Core/Route'
 
-Route.get('/', async () => {
-  return { hello: 'world' }
-})
+Route.group(() => {
+  Route.group(() => {
+    Route.get('search/:term', 'v1/StationSearchesController.index').as('station.search')
+  }).prefix('station')
+}).prefix('v1')
